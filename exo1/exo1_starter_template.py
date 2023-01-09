@@ -62,13 +62,16 @@ class Robot():
       print("la batterie est de",self.__charge_level,"%")
       print("la vitesse est de",self.__current_speed,"m/s")
 
+    @property
+    def show_name(self):
+        print("je m'appelle", self.__name)
 
-r = Robot('dudule')
-r.charge()
-r.allumer()
-r.speed(100)
-r.stop()
-r.eteindre()
-r.status()
+# r = Robot('dudule')
+# r.charge()
+# r.allumer()
+# r.speed(100)
+# r.stop()
+# r.eteindre()
+# r.status()
 
 
