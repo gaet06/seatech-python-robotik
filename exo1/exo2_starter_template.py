@@ -33,8 +33,11 @@ class Human():
 
     @property 
     def show_aliment(self):
-        print("j'ai mangé", self.__aliments)
         
+        if self.__aliments == []:
+          print('jai rien mangé, famille malade...')
+        else :
+            print(self.__aliments)
     @property
     def show_sexe(self):
         print("je suis un(e)",self.__sexe)
@@ -50,19 +53,20 @@ class Cyborg(Robot, Human):
 
 
 cyborg = Cyborg('dagobert', 'Femme')
-cyborg.show_sexe
-midi=['pomme d eau fine','male tes aires']
-cyborg.eat(midi)
-cyborg.show_aliment
-cyborg.show_name
-cyborg.digest()
-cyborg.allumer()
-
-
-# print(cyborg.name, 'sexe', cyborg.sexe)
-# print('Charging battery...')
-# cyborg.charge()
-# cyborg.status()
-# cyborg.eat('banana')
-# cyborg.eat(['coca', 'chips'])
+# cyborg.show_sexe
+# midi=['pomme d eau fine','male tes aires']
+# cyborg.eat(midi)
+# cyborg.show_aliment
+# cyborg.show_name
 # cyborg.digest()
+# cyborg.allumer()
+
+
+cyborg.show_sexe
+print('Charging battery...')
+cyborg.charge()
+cyborg.status()
+cyborg.eat('banana')
+cyborg.eat(['coca', 'chips'])
+cyborg.digest()
+cyborg.show_aliment
