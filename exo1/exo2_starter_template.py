@@ -51,11 +51,12 @@ class Cyborg(Robot, Human):
 
 cyborg = Cyborg('dagobert', 'Femme')
 cyborg.show_sexe
-
-cyborg.eat('pomme d eau fine')
+midi=['pomme d eau fine','male tes aires']
+cyborg.eat(midi)
 cyborg.show_aliment
 cyborg.show_name
 cyborg.digest()
+cyborg.allumer()
 
 
 # print(cyborg.name, 'sexe', cyborg.sexe)
