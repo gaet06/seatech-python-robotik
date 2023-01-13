@@ -50,23 +50,24 @@ class Cyborg(Robot, Human):
         Human.__init__(self, sexe)
 
         
+#main 
+if __name__ == "__main__":
+
+    cyborg = Cyborg('dagobert', 'Femme')
+    # cyborg.show_sexe
+    # midi=['pomme d eau fine','male tes aires']
+    # cyborg.eat(midi)
+    # cyborg.show_aliment
+    # cyborg.show_name
+    # cyborg.digest()
+    # cyborg.allumer()
 
 
-cyborg = Cyborg('dagobert', 'Femme')
-# cyborg.show_sexe
-# midi=['pomme d eau fine','male tes aires']
-# cyborg.eat(midi)
-# cyborg.show_aliment
-# cyborg.show_name
-# cyborg.digest()
-# cyborg.allumer()
-
-
-cyborg.show_sexe
-print('Charging battery...')
-cyborg.charge()
-cyborg.status()
-cyborg.eat('banana')
-cyborg.eat(['coca', 'chips'])
-cyborg.digest()
-cyborg.show_aliment
+    cyborg.show_sexe
+    print('Charging battery...')
+    cyborg.charge()
+    cyborg.status()
+    cyborg.eat('banana')
+    cyborg.eat(['coca', 'chips'])
+    cyborg.digest()
+    cyborg.show_aliment
